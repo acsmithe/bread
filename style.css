@@ -2,8 +2,51 @@ body {
     color: black;
 }
 
-a {
-    text-decoration: none;
+
+.jobb_o {
+    top: 7.5px;
+    right: 7.5px;
+    position: fixed;
+    height: 100%;
+    width: 12.4%;
+    border: 1px solid red;
+    float: right;
+}
+
+
+div.menu {
+    background-color: #c4c4c4;
+    display: inline;
+    border: 1px solid black;
+    float: right;
+    width: 100%;
+}
+
+.menu li {
+    padding: 10px 15px 10px 0;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.menu a:link,
+a:visited {
+    color: black;
+
+}
+
+.menu h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    font-size: 1.3em;
+    font-family: cursive;
+}
+
+.bal_o {
+    width: 87%;
+    float: left;
+    text-align: center;
+    border: 1px solid black;
 }
 
 div.udvozlo {
@@ -12,42 +55,22 @@ div.udvozlo {
     margin: 0 auto;
     background-color: aqua;
     border-radius: 10px;
-    width: 86%;
-    float: left;
 }
 
-div.menu {
-    background-color: #c4c4c4;
-    padding: 0px 10px;
-    float: right;
-    display: inline;
-    border: 1px solid black;
-    top: 7.5px;
-    right: 7.5px;
-    position: fixed;
-    margin: 0 0 10px 0;
-    
-}
-.menu li {
-    padding: 10px 15px 10px 0;
-    text-align: justify;
-    font-size: 1.1em;
-    
-}
- .menu a:link,a:visited{
-    color: black;
-    
- }
-.menu h3{
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 2px solid black;
-    font-size: 1.3em;
-    font-family: cursive;
-}
-div.test{
-    width: 87%;
-    float: left;
+div.test {
+
     text-align: justify;
     padding-left: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.aktive {
+    text-decoration: underline;
+}
+
+a:hover {
+    font-weight: bold;
 }
