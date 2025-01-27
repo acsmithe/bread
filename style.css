@@ -42,6 +42,12 @@ a:visited {
     font-family: cursive;
 }
 
+.jobb_o img {
+    width: 100%;
+    padding-top: 100px;
+}
+
+
 .bal_o {
     width: 87%;
     float: left;
