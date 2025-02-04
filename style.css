@@ -1,6 +1,6 @@
 body {
     color: black;
-    background-color:#85654a;
+    background-color: #85654a;
 }
 
 
@@ -79,7 +79,7 @@ div.udvozlo {
     text-align: center;
     padding: 8px 0;
     margin: 0 auto;
-    background-color:#FFD700;
+    background-color: #FFD700;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -93,22 +93,54 @@ div.test {
     font-size: 1.2em;
     color: #FFD700;
 }
+
 .test h2 {
     margin: 30px 30px 40px 30px;
     text-align: left;
     color: rgb(1, 48, 92);
 }
-.jobbra{
+
+.jobbra {
     float: right;
     margin-left: 10px;
     height: 100px;
     border: 1px solid black;
 }
-.balra{
+
+.balra {
     float: left;
     margin-right: 10px;
     height: 100px;
     border: 1px solid black;
+}
+
+table {
+    margin: 30px auto;
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+    text-align: center;
+}
+
+th {
+    border: 2px solid black;
+    padding: 30px 10px;
+    background-color: #c4c4c4;
+}
+
+td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+table,
+td,
+th {
+    border-collapse: collapse;
+}
+
+td img {
+    height: 150px;
 }
 
 a {
