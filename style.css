@@ -29,9 +29,13 @@ div.menu {
 }
 
 .menu a:link,
-a:visited {
+.menu a:visited {
     color: black;
 
+}
+
+.menu a:hover {
+    font-weight: bold;
 }
 
 .menu h3,
@@ -103,14 +107,14 @@ div.test {
 .jobbra {
     float: right;
     margin-left: 10px;
-    height: 100px;
+    height: 130px;
     border: 1px solid black;
 }
 
 .balra {
     float: left;
     margin-right: 10px;
-    height: 100px;
+    height: 110px;
     border: 1px solid black;
 }
 
@@ -143,14 +147,44 @@ td img {
     height: 150px;
 }
 
+.test li {
+    padding: 15px 0;
+}
+
+.test a:hover {
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;
+}
+
+.kiemeles {
+    font-weight: bold;
+    color: black
+}
+
+a.kiemeles {
+    font-weight: bold;
+    color: rgb(0, 66, 128);
 }
 
 .aktive {
     text-decoration: underline;
 }
 
-a:hover {
-    font-weight: bold;
+.hit {
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 35pt;
+}
+
+.holy_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 300px;
+    border: 1px solid yellow;
 }
