@@ -104,45 +104,58 @@ div.test {
     color: rgb(1, 48, 92);
 }
 
-#osszefog{
-    border: 1px solid #DAD2D8 ;
+#osszefog {
+    border: 1px solid #DAD2D8;
     margin-top: 10px;
     padding: 10px;
-    background-color: #EC9A29;  
+    background-color: #EC9A29;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
     color: #A8201A;
 }
-#osszefog h2{
+
+#osszefog h2 {
     text-align: center;
     font-size: 1.6em;
     color: #143642;
 }
+
 #osszefog a.kiemeles {
     font-weight: bold;
     color: #0F8B8D;
 }
+
 #osszefog li {
     text-align: center;
     list-style-type: upper-roman;
     list-style-position: inside;
+}
+.reszleg{
+    margin: 50px 0;
+    background-color: #85654a;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 
 .jobbra {
     float: right;
     margin-left: 10px;
-    height: 130px;
+    height: 150px;
     border: 1px solid black;
+    margin-top: 30px;
+    margin-right: 10px;
 }
 
 .balra {
     float: left;
     margin-right: 10px;
-    height: 110px;
+    height: 150px;
     border: 1px solid black;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 table {
