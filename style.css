@@ -1,44 +1,102 @@
 body {
-    color: black;
-    background-color: #85654a;
+    background-image: url(images/buzamezo.png);
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 1.3em;
 }
 
-
-.jobb_o {
-    top: 7.5px;
-    right: 7.5px;
-    position: fixed;
-    height: 100%;
-    width: 13.4%;
-    float: right;
-    background-color: #85654a;
-}
-
-
-div.menu {
-    background-color: #c4c4c4;
-    border: 1px solid black;
+header {
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    background-color: #0f0e0ee3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4em;
     width: 100%;
-    border-radius: 10px;
 }
 
-.menu li {
-    padding: 10px 15px 10px 0;
-    text-align: justify;
-    font-size: 1.1em;
+nav {
+    border-top: 3px solid rgb(194, 194, 194);
+    padding: 8px 0;
+    background-color: #0f0e0ee3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+
 }
 
-.menu a:link,
-.menu a:visited {
-    color: black;
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding-right: 50px;
 
 }
 
-.menu a:hover {
+nav a {
+    color: rgba(255, 255, 255, 0.541);
+    text-decoration: none;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-.menu h3,
+nav a:hover {
+    color: white;
+}
+
+.aktive {
+    text-decoration: underline;
+}
+
+section {
+    color: black;
+    padding: 10px;
+    background-color: #ffffffe3;
+    width: 70%;
+    border-radius: 15px;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 65px;
+    font-size: 1.1em;
+    box-shadow: 10px 10px 20px;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.1);
+}
+
+section .li {
+    margin-top: 20px;
+    border: 1.5px solid #3f3e3e33;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+section .li:hover {
+    background-color: white;
+}
+
+.kiemeles {
+    color: rgb(194, 170, 35);
+    font-weight: bold;
+}
+
+div.kezdo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 #kenyer_s h3,
 .kenyer_f h3 {
     text-align: center;
@@ -50,127 +108,80 @@ div.menu {
 
 #kenyer_s,
 .kenyer_f {
-    background-color: #c4c4c4;
     border: 1px solid black;
-    width: 100%;
+    width: 40%;
     margin-top: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.jobb_o img {
+#kenyer_s img {
     width: 80%;
     border-radius: 20px;
-    margin-left: 18px;
     margin-bottom: 10px;
 }
 
 .kenyer_f video {
     width: 80%;
     border-radius: 10px;
-    margin-left: 18px;
     margin-bottom: 10px;
 }
 
-
-.bal_o {
-    width: 86%;
-    float: left;
-    text-align: center;
-    background-color: #b38763;
-}
-
-div.udvozlo {
-    text-align: center;
-    padding: 8px 0;
-    margin: 0 auto;
-    background-color: #FFD700;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.4em;
-}
-
-div.test {
-
-    text-align: justify;
-    padding: 0 10px;
-    font-size: 1.2em;
-    color: #FFD700;
-}
-
-.test h2 {
-    margin: 30px 30px 40px 30px;
-    text-align: left;
-    color: rgb(1, 48, 92);
-}
-
-#osszefog {
-    border: 1px solid #DAD2D8;
-    margin-top: 10px;
+div.kezdo {
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
-    background-color: #EC9A29;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    color: #A8201A;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-#osszefog h2 {
+#kenyer_s h3,
+.kenyer_f h3 {
     text-align: center;
-    font-size: 1.6em;
-    color: #143642;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    font-size: 1.3em;
+    font-family: cursive;
 }
 
-#osszefog a.kiemeles {
-    font-weight: bold;
-    color: #0F8B8D;
-}
-
-#osszefog li {
-    text-align: center;
-    list-style-type: upper-roman;
-    list-style-position: inside;
-}
-
-.reszleg {
-    margin: 50px 0;
-    background-color: #85654a;
-    padding: 10px 10px 10px 20px;
-    border-radius: 10px;
-}
-
-
-.jobbra {
-    float: right;
-    margin-left: 10px;
-    height: 150px;
+#kenyer_s,
+.kenyer_f {
     border: 1px solid black;
-    margin-top: 30px;
-    margin-right: 10px;
-}
-
-.reszleg .jobbra {
-    float: right;
-    margin-left: 10px;
-    height: 150px;
-    border: 3px solid #503c2d;
-    margin-top: 15px;
-    margin-right: 10px;
+    width: 40%;
+    margin-top: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.balra {
-    float: left;
-    margin-right: 10px;
-    height: 150px;
-    border: 1px solid black;
-    margin-top: 30px;
-    margin-left: 10px;
+#kenyer_s img {
+    width: 80%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.kenyer_f video {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#table {
+    margin-bottom: 50px;
+}
+
+#table:hover {
+    transform: scale(1.05);
 }
 
 table {
-    margin: 30px auto;
+    margin: 5px auto;
     color: black;
     background-color: white;
     border: 3px solid black;
@@ -180,7 +191,8 @@ table {
 th {
     border: 2px solid black;
     padding: 30px 10px;
-    background-color: #c4c4c4;
+    background-color: #0f0e0ee3;
+    color: white;
 }
 
 td {
@@ -198,30 +210,63 @@ td img {
     height: 150px;
 }
 
-.test li {
-    padding: 15px 0;
+section#osszefog {
+    width: 50%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 0.9em;
 }
 
-.test a:hover {
-    text-decoration: underline;
+#osszefog li {
+    text-align: center;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    margin-top: 20px;
+    border: 1.5px solid #3f3e3e33;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: white;
+    font-size: 1.2em;
 }
 
-a {
-    text-decoration: none;
+#osszefog a {
+    color: white;
 }
 
-.kiemeles {
-    font-weight: bold;
-    color: black
+#osszefog h2 {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2.0em;
+    color: #143642;
+    border-bottom: 3.5px solid #0f0e0ee3;
 }
 
-a.kiemeles {
-    font-weight: bold;
-    color: rgb(0, 66, 128);
+div.tortenet {
+    margin-top: 90px;
+    margin-bottom: 50px;
 }
 
-.aktive {
-    text-decoration: underline;
+div.tortenet section {
+    padding-bottom: 40px;
+}
+
+.jobbra {
+    float: right;
+    margin-left: 10px;
+    height: 150px;
+    border: 1px solid black;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.balra {
+    float: left;
+    margin-right: 10px;
+    height: 150px;
+    border: 1px solid black;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 .hit {
@@ -238,4 +283,13 @@ a.kiemeles {
     margin-top: 20px;
     height: 300px;
     border: 1px solid yellow;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(1, 73, 1);
 }
