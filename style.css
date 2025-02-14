@@ -5,6 +5,7 @@ body {
     font-size: 1.3em;
 }
 
+
 header {
     color: white;
     text-align: center;
@@ -15,7 +16,16 @@ header {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.4em;
     width: 100%;
+    transition: background-color 0.5s ease, color 0.5s ease, padding 0.5s ease, box-shadow 0.5s ease;
 }
+
+header:hover {
+    background-color: #3e3e3ee3;
+    color: #ffeb3b;
+    padding: 16px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 nav {
     border-top: 3px solid rgb(194, 194, 194);
@@ -25,17 +35,30 @@ nav {
     border-bottom-right-radius: 10px;
     margin: 0 auto;
     text-align: center;
+    transition: background-color 0.5s ease, padding 0.5s ease, border-radius 0.5s ease;
+}
 
+nav:hover {
+    background-color: #3e3e3ee3;
+    padding: 16px 0;
+    border-radius: 20px;
 }
 
 nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
     display: inline;
     padding-right: 50px;
+    transition: padding-right 0.5s ease, transform 0.5s ease;
+}
 
+nav li:hover {
+    padding-right: 60px;
+    transform: scale(1.1);
 }
 
 nav a {
@@ -43,15 +66,21 @@ nav a {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
+    transition: color 0.5s ease, text-shadow 0.5s ease, background-color 0.5s ease, padding 0.5s ease, border-radius 0.5s ease;
 }
 
 nav a:hover {
     color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .aktive {
     text-decoration: underline;
 }
+
 
 section {
     color: black;
@@ -127,50 +156,7 @@ div.kezdo {
     width: 80%;
     border-radius: 10px;
     margin-bottom: 10px;
-}
-
-div.kezdo {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#kenyer_s h3,
-.kenyer_f h3 {
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 2px solid black;
-    font-size: 1.3em;
-    font-family: cursive;
-}
-
-#kenyer_s,
-.kenyer_f {
-    border: 1px solid black;
-    width: 40%;
-    margin-top: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#kenyer_s img {
-    width: 80%;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-}
-
-.kenyer_f video {
-    width: 80%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
+}   
 
 #table {
     margin-bottom: 50px;
@@ -186,6 +172,11 @@ table {
     background-color: white;
     border: 3px solid black;
     text-align: center;
+    transition: box-shadow 0.5s ease;
+}
+
+table:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 th {
@@ -193,11 +184,27 @@ th {
     padding: 30px 10px;
     background-color: #0f0e0ee3;
     color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease, text-shadow 0.5s ease;
+}
+
+th:hover {
+    background-color: #3f51b5;
+    color: #ffeb3b;
+    transform: scale(1.009);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 td {
     border: 2px solid black;
     padding: 10px;
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+td:hover {
+    transform: scale(1.009);
+    background-color: #191919c8;
+    color: #e3e3e3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 table,
@@ -228,10 +235,23 @@ section#osszefog {
     background-color: rgba(0, 0, 0, 0.877);
     color: white;
     font-size: 1.2em;
+    transition: background-color 0.5s ease, color 0.5s ease, font-size 0.5s ease;
+}
+
+#osszefog li:hover {
+    background-color: #3e3e3ee3;
+    color: #ffeb3b;
+    font-size: 1.3em;
 }
 
 #osszefog a {
     color: white;
+    transition: color 0.5s ease, text-decoration 0.5s ease;
+}
+
+#osszefog a:hover {
+    color: #ffeb3b;
+    text-decoration: underline;
 }
 
 #osszefog h2 {
@@ -251,6 +271,16 @@ div.tortenet section {
     padding-bottom: 40px;
 }
 
+div.tortenet section h2 {
+    transition: transform 0.3s ease , margin-left 0.5s ease , text-decoration 0.5s ease;
+}
+
+div.tortenet section h2:hover{
+    transform: scale(1.05);
+    margin-left: 40px;
+    text-decoration: underline;
+}
+
 .jobbra {
     float: right;
     margin-left: 10px;
@@ -258,6 +288,14 @@ div.tortenet section {
     border: 1px solid black;
     margin-top: 30px;
     margin-right: 10px;
+    transition: height 0.5s ease, border 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.jobbra:hover {
+    height: 160px;
+    border: 1px solid #3f51b5;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .balra {
@@ -267,7 +305,16 @@ div.tortenet section {
     border: 1px solid black;
     margin-top: 30px;
     margin-left: 10px;
+    transition: height 0.5s ease, border 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
 }
+
+.balra:hover {
+    height: 160px;
+    border: 1px solid #3f51b5;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 .hit {
     text-align: center;
